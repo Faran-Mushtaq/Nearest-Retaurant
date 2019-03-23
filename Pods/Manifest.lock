@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Cosmos (18.0.1)
+  - DTPhotoViewerController (1.2.5)
+  - GoogleMaps/Base (3.0.3)
+  - GooglePlaces (3.0.3):
+    - GoogleMaps/Base (= 3.0.3)
+  - Kingfisher (4.10.0)
+  - MarqueeLabel (3.2.1):
+    - MarqueeLabel/ObjC (= 3.2.1)
+  - MarqueeLabel/ObjC (3.2.1)
+  - MOLH (0.8)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos (~> 18.0)
+  - DTPhotoViewerController
+  - GooglePlaces
+  - Kingfisher (= 4.10.0)
+  - MarqueeLabel
+  - MOLH
+  - SwiftMessages
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Cosmos
+    - DTPhotoViewerController
+    - GoogleMaps
+    - GooglePlaces
+    - Kingfisher
+    - MarqueeLabel
+    - MOLH
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
+  DTPhotoViewerController: 369a36bddc3dc2cb67c5423a134111c270917786
+  GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
+  GooglePlaces: f09e76993c9c3ee4af8f4f7f535bb94d6aa3b649
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  MOLH: b9766efe89be975ce82a8d5642f681da23c876fc
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+
+PODFILE CHECKSUM: 8e5c1391a56a48e86296861244c7422032e9a1b6
+
+COCOAPODS: 1.5.3

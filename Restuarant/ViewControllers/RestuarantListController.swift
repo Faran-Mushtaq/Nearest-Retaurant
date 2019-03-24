@@ -71,13 +71,34 @@ class RestuarantListController: UIViewController {
         
         RestaurantManager().getRestaurantList(endPoint: "", param: params) { (response) in
             self.results = response.results!
-            self.tblView.reloadData()
+            self.animateTableView()
         }
     }
     
     func imgTapToZoom(imageView : UIImageView){
         let viewController = DTPhotoViewerController(referencedView: imageView, image: imageView.image)
         self.present(viewController, animated: true, completion: nil)
+    }
+    
+    func animateTableView(){
+        
+        tblView.reloadData()
+        
+        let cells = tblView.visibleCells
+        let tableViewHeight = tblView.bounds.size.height
+        var delayCounter = 0.0
+        
+        for cell in cells{
+            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+        }
+        
+        for cell in cells{
+            UIView.animate(withDuration: 1.5, delay: (delayCounter * 0.09), usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+                cell.transform = CGAffineTransform.identity
+            }, completion: nil)
+            
+            delayCounter += 1
+        }
     }
 }
 
